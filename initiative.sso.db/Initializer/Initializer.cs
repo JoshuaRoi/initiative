@@ -20,8 +20,27 @@ namespace initiative.sso.db.Initializer
 
             };
 
-            db.Company.AddRange(defaultCompany);
+            List<Roles> defaultRoles = new List<Roles>
+            {
+                new Roles{Id = 1, Name = "Admin"},
+                new Roles{Id = 2, Name = "User"}
+            };
 
+            List<Users> defaultUser = new List<Users>
+            {
+                new Users{Id = 1, FirstName = "Rey", LastName = "Besmonte", UserName = "reynorbert", UserEmail = "rey.norbert.besmonte@accenture.com"}
+            };
+
+            List<UserRoles> defaultUserRole = new List<UserRoles>
+            {
+                new UserRoles { Id = 1, Users = defaultUser[0], Roles = defaultRoles[0] },
+                new UserRoles { Id = 2, Users = defaultUser[0], Roles = defaultRoles[1] }
+            };
+
+            db.Company.AddRange(defaultCompany);
+            db.Roles.AddRange(defaultRoles);
+            db.Users.AddRange(defaultUser);
+            db.UserRoles.AddRange(defaultUserRole);
             db.SaveChanges();
         }
     }
