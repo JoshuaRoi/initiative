@@ -7,13 +7,13 @@ namespace initiative.sso.db.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class AddDescOnCompany : IMigrationMetadata
+    public sealed partial class InitialMigration : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddDescOnCompany));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialMigration));
         
         string IMigrationMetadata.Id
         {
-            get { return "202003160840481_AddDescOnCompany"; }
+            get { return "202004270623456_InitialMigration"; }
         }
         
         string IMigrationMetadata.Source

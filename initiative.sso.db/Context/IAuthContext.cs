@@ -14,6 +14,9 @@ namespace initiative.sso.db.Context
         DbSet<Users> Users { get; }
 
         DbSet<UserRoles> UserRoles { get;  }
+
+        DbSet<Tests> Tests { get; }
+
         int SaveChanges();
         void SetModified(object entity);
     }

@@ -7,12 +7,11 @@ namespace initiative.sso.db.Model
 
     using System.ComponentModel.DataAnnotations.Schema;
 
-    [Table("tblCompany")]
-    public class Company
+    [Table("tblTest")]
+    public class Tests
     {
         [Key]
         public int Id { get; set; }
 
-        public string Name { get; set; }
     }
 }

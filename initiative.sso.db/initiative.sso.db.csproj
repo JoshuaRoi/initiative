@@ -121,17 +121,14 @@
     <Compile Include="Context\AuthContext.cs" />
     <Compile Include="Context\IAuthContext.cs" />
     <Compile Include="Initializer\Initializer.cs" />
-    <Compile Include="Migrations\202003160809134_InitailMigration.cs" />
-    <Compile Include="Migrations\202003160809134_InitailMigration.designer.cs">
-      <DependentUpon>202003160809134_InitailMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202003160840481_AddDescOnCompany.cs" />
-    <Compile Include="Migrations\202003160840481_AddDescOnCompany.designer.cs">
-      <DependentUpon>202003160840481_AddDescOnCompany.cs</DependentUpon>
+    <Compile Include="Migrations\202004270623456_InitialMigration.cs" />
+    <Compile Include="Migrations\202004270623456_InitialMigration.designer.cs">
+      <DependentUpon>202004270623456_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Company.cs" />
     <Compile Include="Model\Roles.cs" />
+    <Compile Include="Model\Tests.cs" />
     <Compile Include="Model\UserRoles.cs" />
     <Compile Include="Model\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -141,11 +138,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202003160809134_InitailMigration.resx">
-      <DependentUpon>202003160809134_InitailMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202003160840481_AddDescOnCompany.resx">
-      <DependentUpon>202003160840481_AddDescOnCompany.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202004270623456_InitialMigration.resx">
+      <DependentUpon>202004270623456_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

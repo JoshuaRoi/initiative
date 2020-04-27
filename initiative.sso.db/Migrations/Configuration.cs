@@ -15,11 +15,7 @@
 
         protected override void Seed(initiative.sso.db.Context.AuthContext context)
         {
-            context.Company.Add(new Company { Name = "Accenture" });
-            context.Company.Add(new Company { Name = "DXC" });
-            context.Company.Add(new Company { Name = "IBM" });
 
-            context.SaveChanges();
         }
     }
 }

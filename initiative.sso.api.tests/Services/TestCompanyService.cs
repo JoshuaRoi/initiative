@@ -37,7 +37,7 @@ namespace initiative.sso.api.tests.Services
 
         private void LoadData(TestInitiativeContext context)
         {
-            context.company.AddRange(companies);
+            context.Company.AddRange(companies);
         }
 
         private static readonly List<Company> companies = new List<Company>

@@ -15,10 +15,18 @@ namespace initiative.sso.api.tests.Context
     {
         public TestInitiativeContext()
         {
-            this.company = new TestDbSet<Company>(); 
+            this.Company = new TestDbSet<Company>(); 
         }
   
-        public DbSet<Company> company { get; set; }
+        public DbSet<Company> Company { get; set; }
+
+        public DbSet<Roles> Roles { get; set; }
+
+        public DbSet<Users> Users { get; set; }
+
+        public DbSet<UserRoles> UserRoles { get; set; }
+
+        public DbSet<Tests> Tests { get; set; }
 
         public int SaveChanges()
         {

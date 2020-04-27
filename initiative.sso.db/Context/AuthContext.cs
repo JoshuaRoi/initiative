@@ -23,7 +23,7 @@ namespace initiative.sso.db.Context
 
         public DbSet<UserRoles> UserRoles { get; set; }
 
-       
-       
+        public DbSet<Tests> Tests { get; set; }
+
     }
 }
