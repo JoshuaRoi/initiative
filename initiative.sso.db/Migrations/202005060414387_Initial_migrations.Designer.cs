@@ -7,13 +7,13 @@ namespace initiative.sso.db.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class InitialMigration : IMigrationMetadata
+    public sealed partial class Initial_migrations : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialMigration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial_migrations));
         
         string IMigrationMetadata.Id
         {
-            get { return "202004270623456_InitialMigration"; }
+            get { return "202005060414387_Initial_migrations"; }
         }
         
         string IMigrationMetadata.Source

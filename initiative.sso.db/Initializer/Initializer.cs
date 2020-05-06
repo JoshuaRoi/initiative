@@ -28,7 +28,7 @@ namespace initiative.sso.db.Initializer
 
             List<Users> defaultUser = new List<Users>
             {
-                new Users{Id = 1, FirstName = "Rey", LastName = "Besmonte", UserName = "reynorbert", UserEmail = "rey.norbert.besmonte@accenture.com"}
+                new Users{Id = 1, FirstName = "Rey", LastName = "Besmonte", UserName = "reynorbert", UserEmail = "rey.norbert.besmonte@accenture.com", Company = defaultCompany[0]}
             };
 
             List<UserRoles> defaultUserRole = new List<UserRoles>

@@ -31,5 +31,7 @@ namespace initiative.sso.db.Model
         /// Gets or sets the email
         /// </summary>
         public string UserEmail { get; set; }
+
+        public Company Company { get; set; }
     }
 }

@@ -121,9 +121,9 @@
     <Compile Include="Context\AuthContext.cs" />
     <Compile Include="Context\IAuthContext.cs" />
     <Compile Include="Initializer\Initializer.cs" />
-    <Compile Include="Migrations\202004270623456_InitialMigration.cs" />
-    <Compile Include="Migrations\202004270623456_InitialMigration.designer.cs">
-      <DependentUpon>202004270623456_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202005060414387_Initial_migrations.cs" />
+    <Compile Include="Migrations\202005060414387_Initial_migrations.designer.cs">
+      <DependentUpon>202005060414387_Initial_migrations.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Company.cs" />
@@ -138,8 +138,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202004270623456_InitialMigration.resx">
-      <DependentUpon>202004270623456_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202005060414387_Initial_migrations.resx">
+      <DependentUpon>202005060414387_Initial_migrations.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
