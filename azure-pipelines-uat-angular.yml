@@ -56,5 +56,5 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'uat-angular artifact'
+    ArtifactName: 'uat-angular'
     publishLocation: 'Container'
