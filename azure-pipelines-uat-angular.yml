@@ -1,0 +1,32 @@
+# Node.js with Angular
+# Build a Node.js project that uses Angular.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+  branches:
+    include:
+    - initiative-uat
+    exclude:
+    - initiative-sit
+    - master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+
+
+steps:
+- task: Npm@1
+  inputs:
+    workingDir: initiative.sso.web
+    verbose: false
+  displayName: 'Restore Dependencies'
+
+- task: Npm@1
+  inputs:
+    command: custom
+    workingDir: initiative.sso.web
+    verbose: false
+    customCommand: 'run build'
+  displayName: 'Build Angular'
