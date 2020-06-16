@@ -27,8 +27,7 @@ stages:
     displayName: 'Build job'
     pool:
       vmImage: 'windows-latest'
-      demands:
-      - npm
+      
 
   steps:
   - task: NuGetToolInstaller@1
