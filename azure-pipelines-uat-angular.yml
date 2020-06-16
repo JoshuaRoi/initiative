@@ -23,12 +23,11 @@ steps:
     verbose: false
   displayName: 'Restore Dependencies'
 
-
 - task: Npm@1
   inputs:
     command: 'custom'
-    workingDir: 'initiative.sso.web'
-    customCommand: 'run prod-build-dev'
+    workingDir: initiative.sso.web
+    customCommand: 'run ng build --prod'
   displayName: 'Build Angular'
 
 - task: PublishBuildArtifacts@1
