@@ -18,6 +18,7 @@ trigger:
     - initiative.sso.db/* 
     - initiative.sso.models/* 
     - initiative.sso.api.tests/* 
+    
 pool:
   vmImage: 'ubuntu-latest'
 
