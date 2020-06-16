@@ -10,7 +10,9 @@ trigger:
     exclude:
     - initiative-uat
     - master
-    
+  paths:
+    exclude:
+    - initiative.sso.web/*   
 
 pool:
   vmImage: 'windows-latest'
