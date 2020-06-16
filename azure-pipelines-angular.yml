@@ -8,6 +8,7 @@ trigger:
     include:
     - initiative-sit
     exclude:
+    - initiative-uat
     - master
 
 pool:
