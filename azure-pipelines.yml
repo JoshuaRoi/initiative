@@ -9,6 +9,7 @@ trigger:
     - initiative-uat
     exclude:
     - initiative-sit
+    - master
 
 pool:
   vmImage: 'windows-latest'
