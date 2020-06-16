@@ -17,11 +17,11 @@ pool:
 
 
 steps:
+
 - task: Npm@1
   inputs:
-    workingDir: initiative.sso.web
-    verbose: false
-  displayName: 'Restore Dependencies'
+    command: 'install'
+  displayName: 'Install Angular-CLI'
 
 - task: Npm@1
   inputs:
