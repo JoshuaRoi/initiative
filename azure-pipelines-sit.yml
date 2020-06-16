@@ -9,7 +9,7 @@ trigger:
     - initiative-sit
     exclude:
     - initiative-uat
-    
+    - master
     
 
 pool:
