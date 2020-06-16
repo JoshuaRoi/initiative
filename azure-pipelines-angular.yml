@@ -9,17 +9,19 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+
+
 steps:
 - task: Npm@1
   inputs:
-    workingDir: $(angular_folder)
+    workingDir: initiative.sso.web
     verbose: false
   displayName: 'Restore Dependencies'
 
 - task: Npm@1
   inputs:
     command: custom
-    workingDir: $(angular_folder)
+    workingDir: initiative.sso.web
     verbose: false
     customCommand: 'run build'
   displayName: 'Build Angular'
