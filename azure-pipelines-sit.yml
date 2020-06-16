@@ -14,9 +14,6 @@ trigger:
     exclude:
     - initiative.sso.web/*   
 
-
-
-
 variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
@@ -51,3 +48,18 @@ stages:
     inputs:
       platform: '$(buildPlatform)'
       configuration: '$(buildConfiguration)'
+
+  - task: ArchiveFiles@2
+    inputs:
+      rootFolderOrFile: '$(Build.BinariesDirectory)'
+      includeRootFolder: true
+      archiveType: 'zip'
+      archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+      replaceExistingArchive: true
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: 'drop'
+      publishLocation: 'Container'
+      
