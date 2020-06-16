@@ -10,7 +10,14 @@ trigger:
     exclude:
     - initiative-sit
     - master
-
+  paths:
+    include:
+    - initiative.sso.web/* 
+    exclude:
+    - initiative.sso.api/* 
+    - initiative.sso.db/* 
+    - initiative.sso.models/* 
+    - initiative.sso.api.tests/* 
 pool:
   vmImage: 'ubuntu-latest'
 
