@@ -37,6 +37,10 @@ steps:
     customCommand: 'run build'
   displayName: 'Build Angular'
 
+- task: Npm@1
+  inputs:
+    workingDir: initiative.sso.web
+    command: 'publish'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
