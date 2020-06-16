@@ -17,6 +17,12 @@ pool:
 
 
 steps:
+
+- task: Npm@1
+  inputs:
+    command: 'install'
+  displayName: 'Install Angular-CLI'
+
 - task: Npm@1
   inputs:
     workingDir: initiative.sso.web
@@ -30,3 +36,17 @@ steps:
     verbose: false
     customCommand: 'run build'
   displayName: 'Build Angular'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: initiative.sso.web
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    replaceExistingArchive: true
+      
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
