@@ -4,7 +4,11 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- 'initiative-sit'
+  branches:
+    include:
+    - initiative-sit
+    exclude:
+    - master
 
 pool:
   vmImage: 'ubuntu-latest'
