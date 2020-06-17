@@ -12,6 +12,6 @@ namespace initiative.sso.db.Model
     {
         [Key]
         public int Id { get; set; }
-        public int sample{get; set;}
+      
     }
 }
