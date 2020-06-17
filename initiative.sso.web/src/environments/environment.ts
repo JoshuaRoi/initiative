@@ -5,10 +5,10 @@
 export const environment = {
   production: false,
   
-  ida_tenant_id: "28e761fd-8979-4544-9986-cd3960e9fbb9",
-  ida_client_id: "85456ffb-fa22-40da-9ec1-ccd1ac06139f",
-  ida_redirect: "http://localhost:4200/",
-  api_url: "https://localhost:44320"
+  ida_tenant_id: "5436f29f-a610-4370-8f6f-55ed4f4839aa",
+  ida_client_id: "8eedc098-9f2d-4384-9a44-27d180c71fb5",
+  ida_redirect: "https://initiative-sit-angular.azurewebsites.net",
+  api_url: "https://initiative-sit-api.azurewebsites.net"
 };
 
 /*
